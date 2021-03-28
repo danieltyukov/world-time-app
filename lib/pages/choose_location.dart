@@ -11,7 +11,10 @@ class _ChooseLocationState extends State<ChooseLocation> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: Text("Location Screen"),
+      body: SafeArea(
+        
+        child: Text("Location Screen"),
+      ),
     );
   }
 }

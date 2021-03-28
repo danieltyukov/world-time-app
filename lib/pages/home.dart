@@ -8,7 +8,17 @@ class Home extends StatelessWidget {
     return Scaffold(
       body: SafeArea(
         child: SafeArea(
-          child: Text("Home"),
+          child: Column(
+            children: [
+              TextButton.icon(
+                onPressed: () {
+                  Navigator.pushNamed(context, '/location');
+                },
+                icon: Icon(Icons.edit_location),
+                label: Text('Edit Location'),
+              )
+            ],
+          ),
         ),
       ),
     );
