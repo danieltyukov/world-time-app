@@ -29,8 +29,7 @@ class WorldTime {
       time = now.toString();
     } on Exception catch (error) {
       print(error);
+      time = 'could not print sorry';
     }
   }
 }
-
-
