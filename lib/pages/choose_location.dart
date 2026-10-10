@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:world_time_app/services/world_time.dart';
 
 class ChooseLocation extends StatefulWidget {
-  ChooseLocation({Key key}) : super(key: key);
+  ChooseLocation({Key? key}) : super(key: key);
 
   @override
   _ChooseLocationState createState() => _ChooseLocationState();
@@ -53,7 +53,7 @@ class _ChooseLocationState extends State<ChooseLocation> {
                 onTap: () {
                   updateTime(index);
                 },
-                title: Text(locations[index].location),
+                title: Text(locations[index].location!),
                 leading: CircleAvatar(
                   backgroundImage:
                       AssetImage('assets/${locations[index].flag}'),

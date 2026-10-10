@@ -3,11 +3,11 @@ import 'package:http/http.dart';
 import 'package:intl/intl.dart';
 
 class WorldTime {
-  String location;
-  String time;
-  String flag;
-  String url;
-  bool isDayTime;
+  String? location;
+  String? time;
+  String? flag;
+  String? url;
+  bool? isDayTime;
 
   WorldTime({this.location, this.time, this.flag, this.url});
 
